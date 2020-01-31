@@ -6,7 +6,6 @@ class HomeViewDesktop extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
     return MaterialApp(
       home: Scaffold(
         resizeToAvoidBottomPadding: false,
@@ -54,7 +53,11 @@ class HomeViewDesktop extends StatelessWidget {
                                     ),
                                   ),
                                 ),
-                                ConstrainedBox(constraints: BoxConstraints(maxWidth: 240, minWidth: 240),child: Spacer(),),
+                                ConstrainedBox(
+                                  constraints: BoxConstraints(
+                                      maxWidth: 240, minWidth: 240),
+                                  child: Spacer(),
+                                ),
                                 ConstrainedBox(
                                   constraints: BoxConstraints(
                                       maxWidth: 584, minWidth: 356),

@@ -52,7 +52,11 @@ class HomeViewTablet extends StatelessWidget {
                                     ),
                                   ),
                                 ),
-                                ConstrainedBox(constraints: BoxConstraints(maxWidth: 119, minWidth: 119),child: Spacer(),),
+                                ConstrainedBox(
+                                  constraints: BoxConstraints(
+                                      maxWidth: 119, minWidth: 119),
+                                  child: Spacer(),
+                                ),
                                 ConstrainedBox(
                                   constraints: BoxConstraints(
                                       maxWidth: 356, minWidth: 356),
